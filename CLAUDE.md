@@ -15,7 +15,24 @@ This repo follows the official Claude Code plugin layout:
 - `.claude-plugin/plugin.json` -- Plugin manifest
 - `.claude-plugin/marketplace.json` -- Marketplace catalog for distribution
 - `skills/banana/` -- The main skill (SKILL.md + references + scripts)
+- `skills/ui-ux-pro-max/` -- Vendored UI/UX design intelligence skill (see below)
 - `agents/` -- Subagents (brief-constructor)
+
+### `skills/ui-ux-pro-max/`
+
+Vendored, not authored here: this is a copy of the `ui-ux-pro-max` skill from
+[nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)
+(MIT license, kept alongside it in this directory). It's unrelated to image
+generation -- it's a searchable local database of UI/UX design rules (styles,
+color palettes, typography, UX guidelines, icons, motion, charts) across 22
+stacks, plus a design-system generator script. It does not follow the
+"stdlib only" constraint below (it has none of its own pip dependencies either,
+but that constraint is specifically about `generate.py`/`edit.py`).
+
+To pull in upstream updates: re-copy `.claude/skills/ui-ux-pro-max/` from the
+source repo over this directory, then re-apply the path rewrite from
+`${CLAUDE_PLUGIN_ROOT}/.claude/skills/ui-ux-pro-max/scripts/` to
+`${CLAUDE_SKILL_DIR}/scripts/` in `SKILL.md` (the only local modification).
 
 ## Model status (as of March 2026)
 

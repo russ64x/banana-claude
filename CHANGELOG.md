@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.5.0] - 2026-08-09
+
+### Added
+- `skills/ui-ux-pro-max/` -- UI/UX design intelligence skill vendored from
+  [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)
+  (MIT licensed). Searchable local database (styles, color palettes, font
+  pairings, product-type reasoning, UX guidelines, icons, motion presets,
+  charts) across 22 technology stacks, plus a `--design-system` generator.
+  Script paths adapted to this plugin's `${CLAUDE_SKILL_DIR}` convention.
+
 ## [1.4.1] - 2026-03-27
 
 ### Changed

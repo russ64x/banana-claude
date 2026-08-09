@@ -9,7 +9,7 @@ AI image generation skill for Claude Code where **Claude acts as Creative Direct
 Unlike simple API wrappers, Claude interprets your intent, selects domain expertise, constructs optimized prompts using Google's official 5-component formula, and orchestrates Gemini for the best possible results.
 
 [![Claude Code Skill](https://img.shields.io/badge/Claude%20Code-Skill-blue)](https://claude.ai/claude-code)
-[![Version](https://img.shields.io/badge/version-1.4.1-coral)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-1.5.0-coral)](CHANGELOG.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 > **Blog:** [See banana-claude in action](https://agricidaniel.com/blog/banana-claude-ai-image-generation)
@@ -195,6 +195,12 @@ banana-claude/                         # Claude Code Plugin
 │       ├── cost_tracker.py           # Cost logging and summaries
 │       ├── presets.py                # Brand/style preset management
 │       └── batch.py                  # CSV batch workflow parser
+├── skills/ui-ux-pro-max/              # UI/UX design intelligence skill
+│   ├── SKILL.md                       # Vendored from nextlevelbuilder/ui-ux-pro-max-skill (MIT)
+│   ├── data/                          # Styles, palettes, typography, UX guideline CSVs
+│   ├── references/                    # Full rule text and pre-delivery checklist
+│   └── scripts/
+│       └── search.py                  # Local design-database search / design-system generator
 └── agents/
     └── brief-constructor.md           # Subagent for prompt construction
 ```
