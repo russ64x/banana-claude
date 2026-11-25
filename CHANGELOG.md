@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.6.0] - 2026-11-25
+
+### Added
+- `skills/architectural-concept-design/` -- Architectural concept design skill
+  vendored from [Mhrnqaruni/ai-agent-skill-architectural-concept-design](https://github.com/Mhrnqaruni/ai-agent-skill-architectural-concept-design)
+  (MIT licensed, `LICENSE.txt` kept inside the skill directory as upstream
+  ships it). Turns a building brief into a checked concept design: floor
+  plans, elevations and a section (DXF/PDF/PNG), a furnished three.js 3D
+  model, and an area schedule, via `scripts/concept.py` (`init`/`check`/
+  `build`/`schedule`). Unmodified from upstream -- its paths were already
+  relative to the skill's own folder. Has real pip dependencies (`ezdxf`,
+  `PyMuPDF`, `Pillow`) and needs headless Chrome/Edge/Chromium for renders;
+  run via `uv run --with-requirements scripts/requirements.txt` or
+  `pip install -r scripts/requirements.txt` first.
+
 ## [1.5.0] - 2026-08-09
 
 ### Added
